@@ -4,7 +4,7 @@ function checkWeather(position){
 
   jsonp(url, function(data){
       console.log(data);
-    if ( data.currently.apparentTemperature <= 30 ){
+    if ( data.currently.apparentTemperature <= 32 ){
       window.location.href = "closed.html";
       console.log("It's cold! Go home!");
     }
