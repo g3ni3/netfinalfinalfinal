@@ -89,20 +89,20 @@
 				map: black});
 			sphere = new THREE.Mesh(geometry, material);
 			contain.add(sphere);
-			sphere.name = "amanda";
+			sphere.name = "elaine";
 			sphere.position.y = 130; //70
 			sphere.position.x = -25; //-25
 
 
 			//text sphere
 			geometry = new THREE.SphereGeometry(12, 100, 100); //5
-			amanda = new THREE.TextureLoader().load('textures/amanda.png');
+			elaine = new THREE.TextureLoader().load('textures/elainename.png');
 			material = new THREE.MeshBasicMaterial({
 				transparent: true, opacity: 1,
 				side: THREE.DoubleSide,
-				map: amanda});
+				map: elaine});
 			txtsphere = new THREE.Mesh(geometry, material);
-			txtsphere.name = "amanda";
+			txtsphere.name = "elaine";
 			contain.add(txtsphere);
 			txtsphere.position.y = 130; //53
 			txtsphere.position.x = -25; //-25
@@ -117,20 +117,20 @@
 				map: pink});
 			sphere1 = new THREE.Mesh(geometry, material);
 			contain.add(sphere1);
-			sphere1.name = "misha";
+			sphere1.name = "tieg";
 			sphere1.position.y= -40;
 			sphere1.position.x= -130;
 			sphere1.position.z= -7;
 
 			//text sphere 1
 			geometry = new THREE.SphereGeometry(14, 100, 100);
-			misha = new THREE.TextureLoader().load('textures/misha.png');
+			tieg = new THREE.TextureLoader().load('textures/tiegname.png');
 			material = new THREE.MeshBasicMaterial({
 				transparent: true, opacity: 1,
 				side: THREE.DoubleSide,
-				map: misha});
+				map: tieg});
 			txtsphere1 = new THREE.Mesh(geometry, material);
-			txtsphere1.name = "misha";
+			txtsphere1.name = "tieg";
 			contain.add(txtsphere1);
 			txtsphere1.position.y= -40;
 			txtsphere1.position.x= -130;
@@ -156,7 +156,7 @@
 
 			//text sphere 2
 			geometry = new THREE.SphereGeometry(13, 100, 100); //5
-			caro = new THREE.TextureLoader().load('textures/caro1.png');
+			caro = new THREE.TextureLoader().load('textures/caroname.png');
 			material = new THREE.MeshBasicMaterial({
 				transparent: true, opacity: 1,
 				side: THREE.DoubleSide,
@@ -186,7 +186,7 @@
 
 			//text sphere 3
 			geometry = new THREE.SphereGeometry(13, 100, 100);
-			brick = new THREE.TextureLoader().load('textures/brick.png');
+			brick = new THREE.TextureLoader().load('textures/brickname.png');
 			material = new THREE.MeshBasicMaterial({
 				transparent: true, opacity: 1,
 				side: THREE.DoubleSide,
@@ -219,17 +219,17 @@
     		for (var i = 0; i < intersections.length; i++) {
     			var name = intersections[i].object.name;
 
-    			if( name == "amanda" ){
+    			if( name == "elaine" ){
 						document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
-						intersectedWith = "amanda";
+						intersectedWith = "elaine";
     			}
     			else if( name == "brick"){
 						document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
 						intersectedWith = "brick";
     			}
-    			else if ( name == "misha"){
+    			else if ( name == "tieg"){
 						document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
-						intersectedWith = "misha";
+						intersectedWith = "tieg";
     			}
     			else if ( name == "caro"){
 						document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
@@ -252,17 +252,17 @@
     	}
 
     	function onDocumentMouseClick(){
-    		if( intersectedWith == "amanda" ){
+    		if( intersectedWith == "elaine" ){
     			document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
-    			window.location = "http://www.smirnoff.com/en-us/wp-content/uploads/2014/10/Product-Heros-0026-7055-GreenApple.jpg";
+    			window.location = "http://cargocollective.com/elainehsu";
     		}
     		else if( intersectedWith == "brick" ){
     			document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
     			window.location = "https://warrrp.space/galleries/brick/index.html";
     		}
-    		else if( intersectedWith == "misha" ){
+    		else if( intersectedWith == "tieg" ){
     			document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
-    			window.location = "https://soundcloud.com/mishahook";
+    			window.location = "https://soundcloud.com/tieghook";
     		}
     		else if( intersectedWith == "caro" ){
     			document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
