@@ -171,7 +171,7 @@
                //		for (var i = 0; i < intersections.length; i++) {
                	//		var name = intersections[i].object.name;
 
-                    if( e.clientX<1150 && e.clientX>1005 && e.clientY<400 && e.clientY>160 ){
+                    if( e.clientX>640 && e.clientX<780 && e.clientY<400 && e.clientY>160 ){
           						document.body.style.cursor = "pointer";
           						//intersectedWith = "Outhouse.obj";
                     }
@@ -195,7 +195,7 @@
 
 
                 function onDocumentMouseClick( e ){
-                		if( e.clientX<1150 && e.clientX>1005 && e.clientY<400 && e.clientY>160 ){
+                		if( e.clientX>640 && e.clientX<780 && e.clientY<400 && e.clientY>160 ){
                 			document.body.style.cursor = "pointer";
                 			window.location = "galleries/index.html";
                 		}
