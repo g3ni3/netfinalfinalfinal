@@ -4,7 +4,8 @@ function checkWeather(position){
 
   jsonp(url, function(data){
       console.log(data);
-    if ( data.currently.apparentTemperature <= -10 ){
+    if ( data.currently.apparentTemperature <= 30 ){
+      window.location.href = "closed.html";
       console.log("It's cold! Go home!");
     }
     else if ( data.currently.precipType == "snow" && data.currently.precipIntensity >= 0.60 && data.currently.windSpeed >= 50){
@@ -13,6 +14,9 @@ function checkWeather(position){
     else {
       console.log("Come in!");
     }
+
+
+
 /* URL CONDITIONAL
 if (someCondition || someOtherCondition)
        window.location.href = "firstURLhere";

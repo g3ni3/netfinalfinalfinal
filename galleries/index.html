@@ -220,23 +220,23 @@
     			var name = intersections[i].object.name;
 
     			if( name == "elaine" ){
-						document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
+						document.body.style.cursor = "pointer";
 						intersectedWith = "elaine";
     			}
     			else if( name == "brick"){
-						document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
+						document.body.style.cursor = "pointer";
 						intersectedWith = "brick";
     			}
     			else if ( name == "tieg"){
-						document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
+						document.body.style.cursor = "pointer";
 						intersectedWith = "tieg";
     			}
     			else if ( name == "caro"){
-						document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
+						document.body.style.cursor = "pointer";
 						intersectedWith = "caro";
     			}
 					else {
-						document.body.style.cursor = " url('cursor/Dar_Explorer_normal.ani'), url('cursor/spaceship.cur'), 'auto'";
+						document.body.style.cursor = "auto";
 						intersectedWidth = null;
 					}
     		}
@@ -253,23 +253,23 @@
 
     	function onDocumentMouseClick(){
     		if( intersectedWith == "elaine" ){
-    			document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
+    			document.body.style.cursor = "pointer";
     			window.location = "http://cargocollective.com/elainehsu";
     		}
     		else if( intersectedWith == "brick" ){
-    			document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
+    			document.body.style.cursor = "pointer";
     			window.location = "https://warrrp.space/galleries/brick/index.html";
     		}
     		else if( intersectedWith == "tieg" ){
-    			document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
+    			document.body.style.cursor = "pointer";
     			window.location = "https://soundcloud.com/tieghook";
     		}
     		else if( intersectedWith == "caro" ){
-    			document.body.style.cursor = "url('cursor/spaceship.cur'), 'pointer";
+    			document.body.style.cursor = "pointer";
     			window.location = "http://carolineleeliu.com/";
     		}
     		else {//turn cursor back to normal when not hovering over anything
-    			document.body.style.cursor = "url('cursor/Dar_Explorer_normal.ani'), url('cursor/spaceship.cur'), 'auto'";
+    			document.body.style.cursor = "auto";
     		}
     	}
 
